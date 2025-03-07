@@ -1,0 +1,137 @@
+/* 基本リセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+/* コンテナ設定 */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* ヘッダー */
+header {
+  background: linear-gradient(135deg, #FF6B6B, #FFD93D);
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header .tagline {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  background: #fff;
+  color: #FF6B6B;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.download-btn:hover {
+  background: #FF6B6B;
+  color: #fff;
+}
+
+/* メインコンテンツ */
+main {
+  padding: 40px 0;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #FF6B6B;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+section p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 特徴リスト */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+}
+
+ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #FF6B6B;
+  font-weight: bold;
+}
+
+/* フッター */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9em;
+}
+
+/* メディアクエリ（タブレット以上） */
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 3em;
+  }
+  
+  header .tagline {
+    font-size: 1.5em;
+  }
+
+  section p,
+  ul li {
+    text-align: left;
+  }
+  
+  section {
+    margin-bottom: 80px;
+  }
+}
